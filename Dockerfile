@@ -1,5 +1,5 @@
 FROM maven:3.9.0-eclipse-temurin-19 AS build
-WORKDIR /apP
+WORKDIR /app
 COPY pom.xml .
 COPY src ./src
 RUN mvn clean package -DskipTests
